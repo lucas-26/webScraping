@@ -15,6 +15,8 @@ a = int(input("Digite qual valor deseja buscar: "))
 tamanho = len(vet)
 meio = int(tamanho / 2)
 l = meio
+vet.sort()
+print(vet)
 if a > vet[meio]:
   while len(vet) > l:
     aux1.append(vet[l])
@@ -34,6 +36,3 @@ else:
     if encontre == a:
       print("valor", encontre, "encontrado")
       break
-      
-    
-
